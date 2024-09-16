@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: sans-serif;
+  background: #261c33;
+  overflow: hidden;
+}
+
+/* rain drop */
+hr {
+  width: 50px;
+  border-color: transparent;
+  border-right-width: 50px;
+  border-right-color: rgba(255, 255, 255, 0.4);
+
+  position: absolute;
+  bottom: 100%;
+  transform-origin: 100% 50%;
+  z-index: -1;
+
+  animation: rain 1s linear infinite;
+}
+
+/* rain animation */
+@keyframes rain {
+  from {
+    transform: rotate(105deg) translateX(0);
+  }
+
+  to {
+    transform: rotate(105deg) translateX(calc(100vh + 20px));
+  }
+}
