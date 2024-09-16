@@ -26,7 +26,6 @@ body {
 
 /* rain drop */
 hr {
-  width: 50px;
   border-color: transparent;
   border-right-width: 50px;
   border-right-color: rgba(255, 255, 255, 0.4);
